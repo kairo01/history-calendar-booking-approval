@@ -1,0 +1,51 @@
+.calendar-container {
+    width: 100%;
+    max-width: 1000px; /* Set a wider maximum width for the calendar */
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.calendar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px; /* Increase padding for more space */
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #ccc;
+}
+
+.calendar-header h3 {
+    margin: 0;
+    font-size: 2em; /* Increase font size for better visibility */
+}
+
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* Keep 7 columns for days */
+    grid-template-rows: auto;
+    background-color: #f9f9f9;
+}
+
+.day-name {
+    font-weight: bold;
+    padding: 20px; /* Increase padding for better spacing */
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.calendar-days-content {
+    display: contents; /* Allows the grid items to directly apply the grid layout */
+}
+
+.day {
+    border: 1px solid #e0e0e0;
+    padding: 30px; /* Increase padding for a more spacious appearance */
+    text-align: center;
+    min-height: 100px; /* Ensure enough height for each day */
+}
+
+.blank {
+    border: none; /* No border for blank days */
+}

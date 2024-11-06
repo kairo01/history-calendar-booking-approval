@@ -1,0 +1,73 @@
+.approval-table {
+    width: 100%;
+    max-width: 1000px; /* Set a maximum width to prevent the table from stretching too wide */
+    margin: 20px auto; /* Center the table horizontally */
+    border-collapse: collapse;
+    background-color: #d3d8d8; /* Light gray color */
+}
+
+.approval-table th, .approval-table td {
+    border: 3px solid black;
+    padding: 10px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.approval-table th {
+    font-weight: bold;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.approval-table td {
+    font-size: 0.9em;
+    padding: 15px;
+}
+
+/* Center the table container */
+.approval-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    padding: 1em;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 500px;
+}
+
+.modal-content {
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+}
+
+textarea {
+    width: 90%;
+    height: 100px;
+    margin: 10px 0;
+}
+
+button[type="submit"] {
+    padding: 10px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+}

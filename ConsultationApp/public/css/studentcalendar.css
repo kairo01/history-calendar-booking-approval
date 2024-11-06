@@ -1,0 +1,19 @@
+/* public/css/ctcalendar.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+#calendar {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+h2 {
+    text-align: center;
+    color: #ff5722;
+}
+.fc-daygrid-event {
+    background-color: #ff5722 !important;
+    color: white !important;
+    border: none;
+}
